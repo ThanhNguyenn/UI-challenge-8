@@ -1,0 +1,53 @@
+@import "../Styled.scss";
+
+$textColor: #001a5c;
+$secondary-orange: #edbb9c;
+$tertiary-orange: #af6c43;
+.alert--container {
+  width: 650px;
+  background-color: $primary-orange;
+  color: $textColor;
+  margin: 20px auto;
+}
+
+.alert--hidden-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 35px;
+
+  button {
+    height: 50px;
+    background-color: $primary-blue;
+    border: none;
+    color: $primary-white;
+    border-radius: 4px;
+    padding: 12px;
+  }
+}
+
+.alert--tip {
+  border: 1px solid $secondary-orange;
+  border-radius: 4px;
+  width: 9%;
+  text-align: center;
+  color: $tertiary-orange;
+  font-weight: bold;
+  background-color: $primary-white;
+}
+
+.alert--text {
+  width: 80%;
+
+  a {
+    text-decoration: none;
+    color: $textColor;
+    text-decoration: underline;
+    transform: 0.3s ease;
+  }
+
+  a:hover {
+    color: $primary-blue;
+  }
+}

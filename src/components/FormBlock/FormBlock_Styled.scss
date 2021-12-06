@@ -1,0 +1,73 @@
+@import "../Styled.scss";
+
+$input-height: 50px;
+$secondary-white: #dbdbdb;
+.form--container {
+  color: $primary-white;
+  background-color: $primary-blue;
+  font-family: $font-stack;
+  width: 400px;
+  border-radius: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+
+  h3 {
+    font-weight: $fontWeight;
+    margin-bottom: 30px;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: $fontWeight;
+    color: $primary-white;
+    transition: 0.3s ease;
+    display: inline-block;
+    margin-top: 35px;
+    margin-bottom: 10px;
+  }
+}
+
+.form--hidden-container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 0px;
+}
+
+.form--btn-submit {
+  width: 340px;
+  background-color: $primary-white;
+  color: $primary-violet;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
+.form--input-height {
+  height: $input-height;
+}
+
+.form--input {
+  background-color: transparent;
+  color: $primary-white;
+  border: 1px solid $secondary-white;
+}
+
+.form--input::after,
+.form--input::before,
+.form--input:hover,
+.form--input::placeholder {
+  background-color: transparent;
+  color: $primary-white;
+}
+
+.form--btn-signup {
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid $primary-white;
+}
+
+.form--btn-submit:hover {
+  background-color: #dedaf8;
+  color: black;
+}
